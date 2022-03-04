@@ -1,0 +1,12 @@
+.banner-one {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    background: #154b9c;
+    color: white;
+}
+
+.banner-one__subtext{
+    font-size: 4rem;
+    font-weight: 800;
+}
