@@ -1,6 +1,9 @@
 .banner-one {
+    display: flex;
+    flex-direction: column;
     font-size: 3rem;
     font-weight: 600;
+    line-height: 1;
     text-align: center;
     background: #154b9c;
     color: white;
@@ -9,4 +12,268 @@
 .banner-one__subtext{
     font-size: 4rem;
     font-weight: 800;
+    line-height: 1;
 }
+
+.banner-two {
+    text-align: center;
+    font-size: 1.2rem;
+    background: #eff6df;
+    margin: 0.2rem 0;
+    padding: 0.3rem;
+    margin: 0 auto;
+}
+
+.course-seperator {
+    width: 4px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.carrer-text h1{
+    text-align: center;
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin: 25px;
+  }
+
+.courses-submenu {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2px;
+    gap: 5px;
+}
+
+.courses-submenu__item {
+    height: 45px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border: 1px solid hsla(0,0%,80%,.5);
+}
+
+.course-image{
+    height: 90%;
+}
+
+.courses-submenu a{
+    text-decoration: none;
+    padding: 0.2rem;
+    color: black;
+}
+
+.contact-us-form {
+    display: none;
+}
+
+
+.cyber {
+    background: #4ac694;
+}
+
+.admin {
+    background: #a3b6cc;
+}
+
+.marketing {
+    background: #3a5998;
+}
+
+.qa {
+    background: #316cff;
+}
+
+.design {
+    background: #f9cf58;
+}
+
+.dev {
+    background: #8b73f8;
+}
+
+.mobile {
+    background: #8e8e93;
+}
+
+.embedded {
+    background: #475f8e;
+}
+
+.arrow-image{
+    height: 30%;
+    margin-right: auto;
+    justify-items: center;
+}
+
+@media (min-width: 450px) {
+    .courses-submenu {
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .courses-submenu__item {
+        text-align: center;
+        width: 11rem;
+        height: 9rem;
+        flex-direction: column;
+        border: none;
+    }
+
+    .course-image{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .course-seperator {
+        width: 30px;
+        height: 4px;
+    }
+
+    .arrow-image{
+        display: none;
+    }
+
+    .contact-us-form {
+        display : none;
+    }
+}
+
+@media (min-width: 925px) {
+    .courses{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-one{
+        padding-top: 60px;
+        align-items: center;
+        font-weight: 600;
+        font-size: 90px;
+        line-height: 0.9; 
+    }
+
+    .banner-one__subtext{
+        font-size: 120px;
+        font-weight: 800;
+        line-height: 0.9;
+    }
+
+    .carrer-text h1{
+        text-align: right;
+        padding: 0 3rem 0 0;
+    }
+
+    .courses-submenu a{
+        padding: 0;
+    }
+
+    .courses-submenu {
+        max-width: 650px;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .courses-submenu {
+        padding: 0;
+        gap: 0px;
+    }
+
+    .courses-submenu__item {
+        text-align: center;
+        width: 9rem;
+        height: 10rem;
+        flex-direction: column;
+        border: none;
+    }
+
+    .course-seperator {
+        width: 30px;
+        height: 4px;
+    }
+
+    .contact-us-form {
+        margin-top: 110px;
+        height: 490px;
+        font-size: 0.9rem;
+        padding: 1rem;
+        font-weight: 700;
+        max-width: 340px;
+        color: white;
+        display : flex;
+        flex-direction: column;
+        background:#154b9c;
+        flex-grow: 3;
+    }
+
+    .contact-us-form h2{
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .courses-and-contact-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .input-box {
+        padding: 1.2rem 0.3rem;
+        height: 60px;
+        margin: 0.5rem 0 1rem 0;
+        background: white;
+        color: black;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-box input {
+        outline: none;
+        border: none;
+    }
+
+    .input-box .course-seperator{
+        width: 3px;
+        height: 20px;
+        border-radius: 15px;
+        background:#154b9c;
+    }
+
+    .name .course-seperator{
+        margin-right: 15px;   
+    }
+
+    .phone .course-seperator{
+        margin-right: 29px;   
+    }
+
+    .email .course-seperator{
+        margin-right: 20px;   
+    }
+
+    /*
+    .expanding-block {
+        background: turquoise;
+        height: 200px;
+        animation: expand_block 200ms 2s forwards;
+        animation-timing-function: linear;
+        transform-origin: top;
+    }
+    */
+}
+
+@keyframes expand_block{
+    0% {
+      transform: scaleY(1);
+    }
+  
+    50% {
+      transform: scaleY(1.5);
+    }
+  
+    100% {
+      transform: scaleY(2);
+    }
+  }
