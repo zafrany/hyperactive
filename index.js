@@ -1,6 +1,9 @@
 let burgerButton = document.querySelector(".toggle-button");
 let burgerPressed = 0;
 let careerSubmenuButton = document.querySelector(".career");
+let submitButton = document.querySelector(".talk-with-me-btn");
+let hitSubmenu = document.querySelectorAll(".hiw-submenu__category");
+let qna = document.querySelectorAll(".question");
 
 burgerButton.addEventListener('click', ()=> {
     let dropDownMenu = document.querySelector(".dropdown-menu");
@@ -44,26 +47,53 @@ careerSubmenuButton.addEventListener('click', ()=>{
         careerSubMenue.classList.add("displayFlex");
         careerSubMenue.classList.remove("displayNone");
     }
-    console.log(careerSubMenue.classList);
-})
-
-let arrow = document.querySelector('.arrow-image-container');
-arrow.addEventListener('mouseover', ()=> {
-    let career = document.querySelector('.career-submenu');
-    career.classList.remove("displayNone");
-    career.classList.add("displayFlex");
-})
-
-arrow.addEventListener('mouseleave', ()=> {
-    let career = document.querySelector('.career-submenu');
-    career.classList.add("displayNone");
-    career.classList.remove("displayFlex");
 })
 
 window.addEventListener('resize', function(event) {
     let careerSubMenue = document.querySelector('.career-submenu')
+    let innerInfo = document.querySelectorAll(".category-inner-info");
+
     if(this.window.innerWidth >= 925){
         careerSubMenue.classList.add("displayNone");
         careerSubMenue.classList.remove("displayFlex");
     }
 });
+
+submitButton.addEventListener('click', ()=>{
+    let inputForm = document.querySelectorAll(".input-box input");
+    if(inputForm[0].value === "")
+        inputForm[0].classList.add('invalid');
+    else 
+        inputForm[0].classList.remove('invalid');
+
+    if(inputForm[1].value[0] != 0 || inputForm[1].value.length < 10){
+        inputForm[1].classList.add('invalid');
+        inputForm[1].value = "";
+    }
+    else 
+        inputForm[1].classList.remove('invalid');
+
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputForm[2].value)){
+        inputForm[2].classList.add('invalid');
+        inputForm[2].value = "";
+    }
+    else 
+        inputForm[2].classList.remove('invalid');
+})
+
+for(let i = 0; i < hitSubmenu.length; i++){
+    let innerInfo = document.querySelectorAll(".category-inner-info");
+    hitSubmenu[i].addEventListener('click', ()=>{
+        innerInfo[i].classList.toggle("closed-submenu")        
+    })
+}
+
+for(let i = 0; i < qna.length; i++){
+    let answers = document.querySelectorAll('.answer-hidden');
+    let arrowIcon = document.querySelectorAll('.question i');
+    qna[i].addEventListener('click', ()=> {
+        answers[i].classList.toggle("answer");
+        arrowIcon[i].classList.toggle("icon-arrow-up");
+        arrowIcon[i].classList.toggle("icon-arrow-down");
+    })
+}
