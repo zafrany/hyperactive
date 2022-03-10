@@ -1,7 +1,8 @@
 let burgerButton = document.querySelector(".toggle-button");
 let burgerPressed = 0;
 let careerSubmenuButton = document.querySelector(".career");
-let submitButton = document.querySelector(".talk-with-me-btn");
+let submitButton = document.querySelector('.courses-and-contact-form .talk-with-me-btn');
+let footerSubmitButton = document.querySelector('.contact-footer .talk-with-me-btn');
 let hitSubmenu = document.querySelectorAll(".hiw-submenu__category");
 let qna = document.querySelectorAll(".question");
 
@@ -97,3 +98,65 @@ for(let i = 0; i < qna.length; i++){
         arrowIcon[i].classList.toggle("icon-arrow-down");
     })
 }
+
+
+
+footerSubmitButton.addEventListener('click', ()=>{
+    let inputForm = document.querySelectorAll(".contact-footer-container .input-box input");
+    if(inputForm[0].value === "")
+        inputForm[0].classList.add('invalid');
+    else 
+        inputForm[0].classList.remove('invalid');
+
+    if(inputForm[1].value[0] != 0 || inputForm[1].value.length < 10){
+        inputForm[1].classList.add('invalid');
+        inputForm[1].value = "";
+    }
+    else 
+        inputForm[1].classList.remove('invalid');
+
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputForm[2].value)){
+        inputForm[2].classList.add('invalid');
+        inputForm[2].value = "";
+    }
+    else 
+        inputForm[2].classList.remove('invalid');
+})
+
+let modalSubmit = document.querySelector('.modal-button');
+let modal = document.querySelector('.modal-background')
+let modal_exit_buttons = document.querySelectorAll('.modal-exit-button');
+function show_modal() {modal.classList.add("show");}
+
+
+for(let i = 0; i < modal_exit_buttons.length; i++)
+    modal_exit_buttons[i].addEventListener('click', ()=>{
+        modal.classList.toggle("show");
+    })
+
+show_modal()
+const interval = setInterval(function() {
+    show_modal();
+}, 300000);
+
+modalSubmit.addEventListener('click', ()=>{
+    let inputForm = document.querySelectorAll(".modal-form input");
+    if(inputForm[0].value === "")
+        inputForm[0].classList.add('invalid');
+    else 
+        inputForm[0].classList.remove('invalid');
+
+    if(inputForm[1].value[0] != 0 || inputForm[1].value.length < 10){
+        inputForm[1].classList.add('invalid');
+        inputForm[1].value = "";
+    }
+    else 
+        inputForm[1].classList.remove('invalid');
+
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputForm[2].value)){
+        inputForm[2].classList.add('invalid');
+        inputForm[2].value = "";
+    }
+    else 
+        inputForm[2].classList.remove('invalid');
+})

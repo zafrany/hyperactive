@@ -6,9 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="modal.css">
     <title>Hyperactive</title>
 </head>
 <body>
+    <div class="modal-background">
+        <div class="modal">
+            <div class="modal-exit-button">
+                <div id="exit-line1" class="exit-line">
+                </div>
+                <div id="exit-line2" class="exit-line">
+                </div></div><div class="modal-content">
+                    <div class="modal-text">
+                        <div class="modal-title">
+                            מעוניינים לקבל ייעוץ חינם לגבי לימודי הייטק? השאירו פרטים! 
+                        </div>
+                    </div>
+                    <form class="modal-form">
+                        <div class="inputs-group">
+                            <div>
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="modal-input" name="name" id="modal-name-input" placeholder="שם מלא" type="text">
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="modal-input" name="phone" id="modal-phone-input" placeholder="מספר טלפון" type="text">
+                            </div>
+                            <div class="input-wrapper">
+                                <input class="modal-input" name="email" id="modal-email-input" placeholder="אי-מייל" type="text">
+                            </div>
+                        </div>
+                        <div class="agree-checkbox"><label class="agree-explain">
+                            <input class="checkbox" type="checkbox" checked="">
+                            אני מאשר קבלת עדכונים ומבצעים מהייפראקטיב.
+                        </label>
+                        </div>
+                        <button class="modal-button">
+                             דברו איתי
+                             <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                             <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        </form>
+                    </div>
+                </div>
+    </div>
     <div class="nav-header">
         <header class="main-header">
             <div class="main-header__item">
@@ -484,7 +525,7 @@
         <div class="qna-container">
             <h2>שאלות שכנראה תשאלו</h2>
             <div class="questions">
-                <div class="question-and-answer">
+                <div id="q1" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             מה זאת אומרת לא עבדת? לא שילמת!
@@ -495,7 +536,7 @@
                         מאוד פשוט, ללא אותיות קטנות, רק כשתתקבל לעבודה תשלם על הקורס שלמדת. לא התקבלת לעבודה? לא שילמת לנו שקל.
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q2" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             אני רוצה ללמוד אבל אין לי כסף, מה לעשות?
@@ -506,7 +547,7 @@
                         הכל בסדר. אצלנו זוֹ לא בעיה. לא תצטרכו לשלם מראש. לא תצטרכו לקחת הלוואה. שום דבר תשלמו על הלימודים רק אחרי שתתחילו לעבוד וגם אז התשלום יתבצע בתשלום חודשי קטן קבוע.
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q3" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             איפה יש לכם סניפים/ איפה אתם מלמדים?
@@ -517,7 +558,7 @@
                         בתקופת הקורונה אנחנו מלמדים בכל מקום בארץ on line באמצעות שיטות הדרכה מתקדמות.
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q4" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             מתי מתקיימים מיונים לקורסים השונים? 
@@ -528,7 +569,7 @@
                         מיונים מתקיימים כל הזמן באופן שוטף.
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q5" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             מתי מתחילים קורסים?
@@ -539,7 +580,7 @@
                         קורסים מתחילים לאורך כל השנה באופן שוטף. בדרך כלל, מועמדים שעברו את תהליכי המיון בהצלחה, לא צריכים להמתין יותר מ-3-4 שבועות לתחילת ההכשרה.
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q6" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             האם ניתן לעבוד תוך כדי ההכשרות?
@@ -550,7 +591,7 @@
                         ניתן לעבוד תוך כדי ההכשרות אם בוחרים במסלול ערב.
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q7" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             איך אני יכול לדעת איזה מקצוע בהיי-טק מתאים לי?
@@ -561,7 +602,7 @@
                         הגש מועמדות באמצעות הטופס ונתחיל בתהליך האבחון, היעוץ והמיון המקצועי שלנו ללא כל עלות וללא כל מחויבות. נחזיק לך אצבעות שתמצא מתאים לאחד המקצועות בענף ההיי-טק!
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q8" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             סיימתי קורס בבית ספר אחר ולא מצאתי עבודה, מה אני יכול לעשות?
@@ -585,7 +626,7 @@
                         במידה ויתברר שאתה מתאים לתחום אותו למדת ובעל פרופיל אישיותי מתאים, נתאים לך השלמת הכשרה מותאמת אישית שתכניס אותך לענף. כאמור, על הכשרות אצלנו לא משלמים שקל אם לא מתקבלים לעבודה… 
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q9" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             יש לי תואר אקדמי במדעי המחשב ולא מצאתי עבודה, מה אני יכול לעשות?
@@ -609,7 +650,7 @@
                         במידה ויתברר שאתה מתאים למקצוע אליו ברצונך להתקבל,  נתאים לך השלמת הכשרה מותאמת אישית שתכניס אותך לענף. כאמור, על הכשרות אצלנו לא משלמים שקל אם לא מתקבלים לעבודה…
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q10" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             סיימתי קורס בבית ספר אחר ולא מצאתי עבודה, אני שוקל ללמוד תואר במדעי המחשב, זה יעזור לי?
@@ -621,7 +662,7 @@
                         פנה אלינו להליך האבחון, היעוץ והמיון המקצועי שלנו ללא כל עלות וללא כל מחויבות.
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q11" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             אני מעונין להיות פרי לנסר, האם ניתן עדיין ללמוד אצלכם?
@@ -632,7 +673,7 @@
                         מי שאיננו מעונין להתקבל לעבודה כשכיר אלא להיות פרילנסר עדיין נדרש לעבור את תהליכי המיון כדי לוודא את התאמתו לקורס ולמקצוע. במידה ויעבור את תהליכי המיון יוכל להתקבל ללימודים לאחר שיסדיר את התשלום על הקורס המבוקש.
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q12" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             כבר יש לי מקום עבודה, האם ניתן עדיין ללמוד אצלכם?
@@ -643,7 +684,7 @@
                         מי שכבר יש לו מקום עבודה ואיננו מעונין להחליף את מקום העבודה שלו, עדיין נדרש לעבור את תהליכי המיון כדי לוודא את התאמתו לקורס ולמקצוע. במידה ויעבור את תהליכי המיון יוכל להתקבל ללימודים לאחר שיסדיר את התשלום על הקורס המבוקש.
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q13" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             איך מגישים מועמדות?
@@ -660,9 +701,9 @@
     </div>
     <div class="public-service">
         <div class="public-service-container">
-            <h2>שרות לציבור</h2>
+            <h2>שירות לציבור</h2>
             <div class="questions">
-                <div class="question-and-answer">
+                <div id="q14" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             לא התקבלתי אצלכם ללימודים בתחום שעניין אותי, מה לעשות?
@@ -674,7 +715,7 @@
                         מעבר לכך, אתם מכירים את עצמכם הכי טוב. וגם אנחנו יכולים לטעות. אם לא התקבלתם אצלנו, אבל אתם משוכנעים ביכולות שלכם אל תתיאשו וחפשו נתיב לימודי במקום אחר.
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q15" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             למרות שלא התקבלתי אצלכם, אני משוכנע ביכולות שלי ורוצה לחפש קורס במקום לימודי אחר. למה צריך לשים לב וממה צריך להזהר?
@@ -685,7 +726,7 @@
                         צריך להזהר מפנטזיות ולהצמד לעובדות בבחינת קורסים ומקומות לימודיים. אדם שבונה לעצמו פנטזיה אופטימית גם נוטה להאמין לתרגילים שיווקיים מופרכים. ֿלא צריך לפתח פנטזיה לגבי שכר התחלתי גבוה, ולהזהר מטענות אנשי מכירות לגבי ״התחייבות לעבודה״, ״מלגת לימודים״ ו״אחוזי השמה״. 
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q16" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             כמה מרוויחים בענף ההיי-טק?
@@ -695,8 +736,8 @@
                     <div class="answer-hidden">
                         אין ספק שעבודה בענף ההיי-טק היא עבודת השכיר הרווחית והמשתלמת ביותר.
                         יש גם אין ספור טבלאות שכר באינטרנט שמפיצות חברות השמה שמראות על כך: 
-                        <a class="answer-link" target="_blank" href="https://www.jobinfo.co.il/%D7%98%D7%91%D7%9C%D7%90%D7%95%D7%AA-%D7%A9%D7%9B%D7%A8.aspx">טבלת שכר jobinfo</a> 
-                        <a class="answer-link" target="_blank" href="https://www.nisha.co.il/%D7%98%D7%91%D7%9C%D7%90%D7%95%D7%AA-%D7%A9%D7%9B%D7%A8">טבלת שכר נישה</a> 
+                        <a class="answer-link" href="https://www.jobinfo.co.il/%D7%98%D7%91%D7%9C%D7%90%D7%95%D7%AA-%D7%A9%D7%9B%D7%A8.aspx">טבלת שכר jobinfo</a> 
+                        <a class="answer-link" href="https://www.nisha.co.il/%D7%98%D7%91%D7%9C%D7%90%D7%95%D7%AA-%D7%A9%D7%9B%D7%A8">טבלת שכר נישה</a> 
                         <a class="answer-link" href="https://www.ethosia.co.il/salary_report">טבלת שכר אתוסיה</a>
                         רוב בתי הספר מפנים לטבלאות השכר הללו ויוצרות את הרושם שהזהב נמצא ברחובות ופשוט צריך רק לאסוף אותו…
                         <br>
@@ -705,7 +746,7 @@
                         לעומת זאת, הן בדרך כלל מפריזות בשכר של מועמדים חסרי ניסיון. חברות השמה בדרך כלל לא מטפלות בכלל בהשמה של בוגרים חסרי ניסיון אלא אם כן מדובר בבוגרי תואר ראשון בהצטיינות במדעי המחשב מהטכניון/אוניברסיטת תל אביב. משום כך השכר שמופיע בטבלאות לבוגרים חסרי ניסיון מופרז ולא משקף. חשוב להבין שקשה להכנס לעבודה ראשונה בענף כבוגר חסר ניסיון וציפיות השכר ההתחלתי צריכות להיות הרבה יותר צנועות. לא צריך להמתין יותר מדי, ״חגיגת השכר״ מתחילה אחרי שצוברים את 2 שנות הניסיון הקריטיות בעבודה…
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q17" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             בכל מיני בתי ספר הבטיחו לי ״התחייבות לעבודה״ ב״חוזה חתום״, זה אמיתי?
@@ -730,7 +771,7 @@
                         האם צריך לפסול בתי ספר שמציעים התחייבויות שווא כאלה ולבחור באלו שלא? לאו דווקא. צריך פשוט להשוות בין בתי הספר תוך התעלמות מההתחייבות המדומה.
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q18" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             בכל מיני בתי ספר הבטיחו לי מלגה, זה אמיתי?
@@ -748,7 +789,7 @@
                         כשכל התלמידים מקבלים ״מלגה״ זה פשוט מצב בו מעלים את מחיר הקורס מראש ואז מורידים אותו למחיר האמיתי באמצעות ״מלגה״.  
                     </div>
                 </div>
-                <div class="question-and-answer">
+                <div id="q19" class="question-and-answer">
                     <div class="question">
                         <div class="question__content"> 
                             בית ספר/מכללה אקדמית מסויימת טוען שיש לו אחוז השמה מסויים של הבוגרים בענף. זה אמיתי?
@@ -764,6 +805,53 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="contact-footer">
+        <h2>
+            צרו קשר לכל שאלה או לקביעת פגישת ייעוץ (מלאו פרטיכם ונחזור אליכם בהקדם) 
+        </h2>
+        <div class="contact-footer-container">
+            <form class="contact-us-form">
+                <div class="input-box name">
+                    שם מלא
+                    <div class="course-seperator"></div>
+                    <input name="name" placeholder="* נא להזין שם תקין" type="text">
+                    </input>
+                </div>
+                <div class="input-box phone">
+                    טלפון
+                    <div class="course-seperator"></div>
+                    <input name="name" placeholder="* נא להזין מספר טלפון" type="text">
+                    </input>
+                </div>
+                <div class="input-box email">
+                    אי-מייל
+                    <div class="course-seperator"></div>
+                    <input name="name" placeholder="* נא להזין כתובת מייל" type="text">
+                    </input>
+                </div>
+                <button type="button" class="talk-with-me-btn">דברו איתי!</button>
+            </form>
+            <div class="advs-checkbox">
+                <input type="checkbox" title="advs-checkbox" checked="checked">
+                <div class="advs-checkbox__desc">
+                    אני מאשר קבלת עדכונים ומבצעים מהייפראקטיב בכפוף לתקנון.
+                </div> 
+            </div>
+        </div> 
+    </div>
+    <div class="whatsapp-connect">היי! אנחנו פה,יש לך שאלה?<svg width="20" height="20" aria-hidden="true" data-prefix="fab" data-icon="whatsapp" class="svg-inline--fa fa-whatsapp fa-w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#fff" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg></div>      
+    <div class="footer-container">
+        <a href="#contact-hyper-footer" class="footer-btn">
+            <i class="far fa-hand-point-up" aria-hidden="true"></i>
+            <span class="hover-underline">לפרטים</span>
+        </a>
+        <a class="footer-btn border-right">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span class="hover-underline">
+                וואטסאפ
+            </span>
+        </a>
     </div>
     <script data-search-pseudo-elements src="https://kit.fontawesome.com/f737751420.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
