@@ -6,6 +6,14 @@ p {
     margin-inline-end: 0px;
 }
 
+ .courses-submenu img { 
+    opacity: 1; 
+  } 
+  
+  .courses-submenu img:hover { 
+    opacity: 0.7; 
+  }
+
 .banner-one {
     display: flex;
     flex-direction: column;
@@ -484,7 +492,7 @@ p {
  
 .svg-inline--fa {
     margin-right: 0.5rem;
-    color: white;
+    color: #007cba;
 }
 
 .icon-solid::before {
@@ -756,7 +764,7 @@ p {
     .questions {
         padding: 50px 0 0 0;
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
@@ -766,63 +774,7 @@ p {
         width: 450px;
     }
 
-    #q1{
-        order: 2;
-    }
-    #q2{
-        order: 4;
-    }
-    #q3{
-        order: 6;
-    }
-    #q4{
-        order: 8;
-    }
-    #q5{
-        order: 10;
-    }
-    #q6{
-        order: 12;
-    }
-    #q7{
-        order: 1;
-    }
-    #q8{
-        order: 3;
-    }
-    #q9{
-        order: 5;
-    }
-    #q10{
-        order: 7;
-    }
-    #q11{
-        order: 9;
-    }
-    #q12{
-        order: 11;
-    }
-    #q13{
-        order: 13;
-    }
-    #q14{
-        order: 2;
-    }
-    #q15{
-        order: 4;
-    }
-    #q16{
-        order: 6;
-    }
-    #q17{
-        order: 1;
-    }
-    #q18{
-        order: 3;
-    }
-    #q19{
-        order: 5;
-    }
+    
 
     .contact-footer h2{
         text-align: center;
